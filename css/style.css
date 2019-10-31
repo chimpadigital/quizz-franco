@@ -411,7 +411,7 @@ transition: transform .25s cubic-bezier(0.25, 0.8, 0.25, 1);
 .main-menu ul .search-btn {
 	color: #fff;
 	cursor: pointer;
-	margin-left: 44px;
+	margin-left: 10px;
 }
 
 .slicknav_menu {
@@ -2550,3 +2550,23 @@ transition: transform .25s cubic-bezier(0.25, 0.8, 0.25, 1);
 	}
 }
 .owl-carousel{z-index: 0;}
+.dropdown-menu{background:#212529}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    background-color: transparent
+}
+.btn{color: #fff;}
+button, select {
+    text-transform: none;
+    background: transparent;
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Built titling';
+    letter-spacing: 1px;
+}
+option{background:#212529; padding: 15px;}
+.idioma{height: 22px;margin-top: -9px;}

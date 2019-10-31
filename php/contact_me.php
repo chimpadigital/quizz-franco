@@ -72,7 +72,7 @@ $mail = new PHPMailer;
 // $mail->IsMail();
 // $mail->IsSendmail();
 // $mail->isSMTP();
-// $mail->SMTPDebug = 4;
+$mail->SMTPDebug = 4;
 // $mail->Debugoutput = 'html';
 
 // $mail->Host = 'smtp.gmail.com';

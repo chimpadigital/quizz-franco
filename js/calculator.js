@@ -25,7 +25,7 @@ $('document').ready(function(){
 	$('#contactFormBtn').click(function(e){
 		e.preventDefault();
 		$.ajax({
-			url: './php/mail.php',
+			url: './php/contact_me.php',
 			type: 'POST',
 			crossDomain: true,
 			dataType: 'text',
@@ -34,7 +34,13 @@ $('document').ready(function(){
 				'lastName': $('#lastName').val(),
 				'email': $('#email').val(),
 				'weight': $('#weight').val(),
-				'height': $('#height').val()
+				'height': $('#height').val(),
+				'target': target,
+				'gender': gender,
+				'progress': progress,
+				'carbohydrates': carbohydrates,
+				'proteins': proteins,
+				'fats': fats
 			},
 			success: function(res){
 				console.log('success');
@@ -80,7 +86,7 @@ function setLanguage(lan){
 	$('#loseWeight').html(lan.loseWeight);
 	$('#maintainWeight').html(lan.maintainWeight);
 	$('#gainWeight').html(lan.gainWeight);
-	$('#selectGender').html(lan.selectGender);
+	$('#selectGenderSelect').html(lan.selectGender);
 	$('#male').html(lan.male);
 	$('#female').html(lan.female);
 	$('#typeOfProgress').html(lan.typeOfProgress);

@@ -37,12 +37,10 @@ $('document').ready(function(){
 				'height': $('#height').val()
 			},
 			success: function(res){
-				console.log(res);
+				console.log('success');
 			},
 			error: function(er){
-				$('#messageModalTitle').html('Error');
-				$('#messageModalMessage').html('Ha ocurrido un error inesperado');
-				$('#messageModal').modal('show');
+				console.log('error');
 			}
 		});
 		

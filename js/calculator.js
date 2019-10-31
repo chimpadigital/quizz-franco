@@ -91,6 +91,7 @@ function setLanguage(lan){
 	$('#loseFat').html(lan.loseFat);
 	$('#onlineCoaching').html(lan.onlineCoaching);
 	$('#onlineCoaching2').html(lan.onlineCoaching);
+	$('#selected').html(lan.selected);
 	$('#ebooks').html(lan.ebooks);
 	$('#about').html(lan.about);
 	$('#about2').html(lan.about);

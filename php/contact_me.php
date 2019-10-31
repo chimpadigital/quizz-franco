@@ -28,13 +28,7 @@ if(!isset($_POST['name']) ||
 !isset($_POST['lastName']) ||
 !isset($_POST['email']) ||
 !isset($_POST['weight']) ||
-!isset($_POST['height']) ||
-!isset($_POST['target']) ||
-!isset($_POST['gender']) ||
-!isset($_POST['progress']) ||
-!isset($_POST['carbohydrates']) ||
-!isset($_POST['proteins']) ||
-!isset($_POST['fats'])) {
+!isset($_POST['height'])) {
 
 	return 'Error';
 }

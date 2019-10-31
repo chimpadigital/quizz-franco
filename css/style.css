@@ -215,7 +215,7 @@ ol {
 	text-transform: uppercase;
 	transition: all .3s ease-in;
 }
-.primary-btn:hover {
+.primary-btn:hover, .primary-btn:active, .primary-btn:focus {
 	color: #2B2EC1;
 	background: #fff;
 }
@@ -842,6 +842,13 @@ transition: transform .25s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .membership-card:hover{
+	background-blend-mode: hard-light;
+	border-top: 8px solid #2b2ec1;
+    border-left: 8px solid #2b2ec1;
+    border-bottom: 8px solid #2b2ec1;
+	border-right: 8px solid #2b2ec1;
+}
+.selected{
 	background-blend-mode: hard-light;
 	border-top: 8px solid #2b2ec1;
     border-left: 8px solid #2b2ec1;

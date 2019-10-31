@@ -59,7 +59,7 @@ $email_message2 .= "<p>Grasas: $fats</p>";
 //inicio script grabar datos en csv
 //$fichero = 'consultas cognition.csv';//nombre archivo ya creado
 //crear linea de datos separado por coma
-$fecha=date("d-m-y H:i:s");
+// $fecha=date("d-m-y H:i:s");
 //$linea = $fecha.";".$name.";".$tel.";".$email.";".$mensaje."\n";
 // Escribir la linea en el fichero
 //file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
@@ -93,7 +93,7 @@ $mail->setFrom('info@francofit.com', 'FrancoFit');
 
 $mail->addReplyTo('info@francofit.com','FrancoFit');
 
-$mail->addAddress('sendTo@blabla.com','FrancoFit');
+$mail->addAddress('sdesigncba@gmail.com','FrancoFit');
 
 $mail->isHTML(true);
 $mail->Subject = $email_subject;

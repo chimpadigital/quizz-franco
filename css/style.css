@@ -346,6 +346,17 @@ ol {
 	letter-spacing: 1px;
 	position: relative;
 }
+#selected {
+	color: #fff;
+	display: block;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: 'Built titling';
+	letter-spacing: 1px;
+	position: relative;
+	line-height: 1rem;
+}
 
 .single-slide h1.small-title{font-size: 36px;font-family: 'Coda';}
 .main-menu ul li a::before {
@@ -2551,6 +2562,7 @@ transition: transform .25s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .owl-carousel{z-index: 0;}
 .dropdown-menu{background:#212529}
+.dropdown-toggle{display: inline-flex;}
 .dropdown-item:focus, .dropdown-item:hover {
     color: #fff;
     background-color: transparent
@@ -2571,4 +2583,5 @@ button, select {
     letter-spacing: 1px;
 }
 option{background:#212529; padding: 15px;}
-.idioma{height: 22px;margin-top: -9px;}
+.idioma{height: 22px;margin-top: -3px;margin-right: 10px;}
+.dropdown-toggle::after {margin-left: .55em;    margin-top: .35rem;}

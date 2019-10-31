@@ -36,6 +36,7 @@ var en = {"gainMuscle":"GAIN MUSCLE",
 		  "trainingGuide":"TRAINING GUIDE",
 		  "primeCombo":"PRIME COMBO",
 		  "select":"SELECT",
+		  "selected":"Languaje",
 		  "allRightReserved":"All right reserved"};
 		  
 var es = {"gainMuscle":"GAIN MUSCLE",
@@ -74,6 +75,7 @@ var es = {"gainMuscle":"GAIN MUSCLE",
 		  "trainingGuide":"GUÍA DE ENTRENAMIENTO",
 		  "primeCombo":"PRIME COMBO",
 		  "select":"SELECCIONAR",
+		  "selected":"Idioma",
 		  "allRightReserved":"Todos los drechos reservados"};
 
 var de = {"gainMuscle":"MUSKELAUFBAU",
@@ -112,4 +114,5 @@ var de = {"gainMuscle":"MUSKELAUFBAU",
 		  "trainingGuide":"TRAININGSANLEITUNG",
 		  "primeCombo":"PRIME COMBO",
 		  "select":"SELECT",
+		  "selected":"Languaje",
 		  "allRightReserved":"Alle rechte vorbehalten"};

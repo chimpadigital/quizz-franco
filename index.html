@@ -59,9 +59,9 @@
                                           <img src="img/idioma.svg" class="idioma" alt="">
                                         </button>
                                         <div class="dropdown-menu">
-                                          <a class="dropdown-item" href="#">English</a>
-                                          <a class="dropdown-item" href="#">Español</a>
-                                          <a class="dropdown-item" href="#">Deutsch</a>
+                                          <a class="dropdown-item languaje" onclick="setLanguajeTo('en')">English</a>
+                                          <a class="dropdown-item languaje" onclick="setLanguajeTo('es')">Español</a>
+                                          <a class="dropdown-item languaje" onclick="setLanguajeTo('de')">Deutsch</a>
                                         </div>
                                       </div>
                                 </li>
@@ -92,7 +92,7 @@
         <div class="container">
             <div class="row">
                 <div onclick="setTarget('lose')" class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="membership-card set-bg selected" data-setbg="img/lose-weight.jpg">
+                    <div id="t1" class="membership-card set-bg" data-setbg="img/lose-weight.jpg">
                         <div class="membership-details">
 
                             <div class="discount text-center">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div onclick="setTarget('maintain')" class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="membership-card set-bg" data-setbg="img/maintain.jpg">
+                    <div id="t2" class="membership-card set-bg" data-setbg="img/maintain.jpg">
                         <div class="membership-details">
 
                             <div class="discount text-center">
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div onclick="setTarget('gain')" class="col-lg-4 col-md-12 col-12 d-flex justify-content-center">
-                    <div class="membership-card set-bg" data-setbg="img/gain.jpg">
+                    <div id="t3" class="membership-card set-bg" data-setbg="img/gain.jpg">
                         <div class="membership-details">
 
                             <div class="discount text-center">
@@ -139,7 +139,7 @@
             </div>
             <div class="row">
                 <div onclick="setGender('male')" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="membership-card set-bg" data-setbg="img/male.jpg">
+                    <div id="g1" class="membership-card set-bg" data-setbg="img/male.jpg">
                         <div class="membership-details">
 
                             <div class="discount text-center">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div onclick="setGender('female')" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="membership-card set-bg" data-setbg="img/female.jpg">
+                    <div id="g2" class="membership-card set-bg" data-setbg="img/female.jpg">
                         <div class="membership-details">
 
                             <div class="discount text-center">
@@ -177,7 +177,7 @@
             </div>
             <div class="row">
                 <div onclick="setProgress('slow')" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="membership-card set-bg" data-setbg="img/slow.jpg">
+                    <div id="p1" class="membership-card set-bg" data-setbg="img/slow.jpg">
                         <div class="membership-details">
 
                             <div class="discount text-center">
@@ -188,7 +188,7 @@
                     </div>
                 </div>
                 <div onclick="setProgress('fast')" class="col-lg-6 col-md-6 col-12 d-flex justify-content-center">
-                    <div class="membership-card set-bg" data-setbg="img/fast.jpg">
+                    <div id="p2" class="membership-card set-bg" data-setbg="img/fast.jpg">
                         <div class="membership-details">
 
                             <div class="discount text-center">

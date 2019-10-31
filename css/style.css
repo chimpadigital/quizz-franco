@@ -2555,6 +2555,8 @@ transition: transform .25s cubic-bezier(0.25, 0.8, 0.25, 1);
     color: #fff;
     background-color: transparent
 }
+.languaje{color:#fff !important;}
+.languaje:hover{cursor:pointer;}
 .btn{color: #fff;}
 button, select {
     text-transform: none;

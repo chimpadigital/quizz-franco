@@ -1014,6 +1014,7 @@ transition: transform .25s cubic-bezier(0.25, 0.8, 0.25, 1);
 	font-size: 13px;
 	padding-left: 18px;
 	display: inline-block;
+	margin-bottom: 30px;
 }
 
 .footer-content .subscribe-form input::-webkit-input-placeholder {

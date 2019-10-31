@@ -2582,6 +2582,9 @@ button, select {
     font-family: 'Built titling';
     letter-spacing: 1px;
 }
+.btn:hover {
+    color: #fff;
+}
 option{background:#212529; padding: 15px;}
 .idioma{height: 22px;margin-top: -3px;margin-right: 10px;}
 .dropdown-toggle::after {margin-left: .55em;    margin-top: .35rem;}

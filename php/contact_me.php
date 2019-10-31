@@ -69,20 +69,20 @@ $mail = new PHPMailer;
 $mail->SMTPDebug = 4;
 // $mail->Debugoutput = 'html';
 
-// $mail->Host = 'smtp.gmail.com';
-// $mail->Port = 587;
-// $mail->SMTPAuth = true;
-// $mail->SMTPSecure = 'tls';
-// $mail->SMTPAutoTLS = false;
-// $mail->SMTPOptions = array(
-//     'ssl' => array(
-//         'verify_peer' => false,
-//         'verify_peer_name' => false,
-//         'allow_self_signed' => true
-//     )
-// );
-// $mail->Username = 'sprados@chimpancedigital.com.ar';
-// $mail->Password = 'Chimpance951#$';
+$mail->Host = 'mail.franco-fit.com';
+$mail->Port = 25;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = '';
+$mail->SMTPAutoTLS = false;
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
+$mail->Username = 'info-franco-fit.com';
+$mail->Password = 'pzz1l{ECiK*G';
 $mail->setFrom('info@francofit.com', 'FrancoFit');
 
 $mail->addReplyTo('info@francofit.com','FrancoFit');

@@ -3,6 +3,7 @@
 var target	 = '';
 var gender	 = '';
 var progress = '';
+var language = '';
 
 var calories = '';
 var carbohydrates = 0;
@@ -10,7 +11,7 @@ var proteins = 0;
 var fats = 0;
 
 $('document').ready(function(){
-	var language = navigator.language || navigator.userLanguage;
+	language = navigator.language || navigator.userLanguage;
 	language = language.toLowerCase();
 	
 	if(language.toString().includes('es'))
@@ -74,6 +75,17 @@ $('document').ready(function(){
 	});
 });
 
+function setLanguajeTo(lan){
+	if(lan == 'es')
+		language = es;
+	if(lan == 'en')
+		language = en;
+	if(lan == 'de')
+		language = de;
+	
+	setLanguage(language);
+}
+
 function setLanguage(lan){
 	$('#gainMuscle').html(lan.gainMuscle);
 	$('#loseFat').html(lan.loseFat);
@@ -129,6 +141,24 @@ function setLanguage(lan){
 function setTarget(targetSelected){
 	target = targetSelected;
 	
+	if(targetSelected == 'lose'){
+		$('#t1').addClass('selected');
+		$('#t2').removeClass('selected');
+		$('#t3').removeClass('selected');
+	}
+	
+	if(targetSelected == 'maintain'){
+		$('#t1').removeClass('selected');
+		$('#t2').addClass('selected');
+		$('#t3').removeClass('selected');
+	}
+	
+	if(targetSelected == 'gain'){
+		$('#t1').removeClass('selected');
+		$('#t2').removeClass('selected');
+		$('#t3').addClass('selected');
+	}
+	
 	$('html, body').animate({
 		scrollTop: $("#selectGender").offset().top
 	}, 1000);
@@ -137,6 +167,16 @@ function setTarget(targetSelected){
 function setGender(genderSelected){
 	gender = genderSelected;
 	
+	if(genderSelected == 'male'){
+		$('#g1').addClass('selected');
+		$('#g2').removeClass('selected');
+	}
+	
+	if(genderSelected == 'female'){
+		$('#g1').removeClass('selected');
+		$('#g2').addClass('selected');
+	}
+	
 	$('html, body').animate({
 		scrollTop: $("#selectProgress").offset().top
 	}, 1000);
@@ -144,6 +184,16 @@ function setGender(genderSelected){
 
 function setProgress(progressSelected){
 	progress = progressSelected;
+	
+	if(progressSelected == 'slow'){
+		$('#p1').addClass('selected');
+		$('#p2').removeClass('selected');
+	}
+	
+	if(progressSelected == 'fast'){
+		$('#p1').removeClass('selected');
+		$('#p2').addClass('selected');
+	}
 	
 	$('html, body').animate({
 		scrollTop: $("#contactDataForm").offset().top

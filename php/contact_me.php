@@ -65,9 +65,9 @@ $email_message2 .= "<p>Grasas: $fats</p>";
 $mail = new PHPMailer;
 // $mail->IsMail();
 // $mail->IsSendmail();
-// $mail->isSMTP();
+$mail->isSMTP();
 $mail->SMTPDebug = 2;
-// $mail->Debugoutput = 'error_log';
+$mail->Debugoutput = 'html';
 
 $mail->Host = 'franco-fit.com';
 $mail->Port = 25;

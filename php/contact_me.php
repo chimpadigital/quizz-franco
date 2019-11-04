@@ -70,7 +70,7 @@ $mail->SMTPDebug = 2;
 $mail->Debugoutput = 'html';
 
 $mail->Host = 'franco-fit.com';
-$mail->Port = 25;
+$mail->Port = 2525;
 $mail->SMTPAuth = true;
 // $mail->SMTPSecure = '';
 // $mail->SMTPAutoTLS = false;

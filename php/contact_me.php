@@ -66,8 +66,8 @@ $mail = new PHPMailer;
 // $mail->IsMail();
 // $mail->IsSendmail();
 // $mail->isSMTP();
-// $mail->SMTPDebug = 4;
-// $mail->Debugoutput = 'html';
+$mail->SMTPDebug = 2;
+$mail->Debugoutput = 'error_log';
 
 // $mail->Host = 'franco-fit.com';
 // $mail->Port = 25;

@@ -83,9 +83,9 @@ $mail->SMTPOptions = array(
 );
 $mail->Username = 'info-franco-fit.com';
 $mail->Password = 'pzz1l{ECiK*G';
-$mail->setFrom('info@francofit.com', 'FrancoFit');
+$mail->setFrom('info@franco-fit.com', 'FrancoFit');
 
-$mail->addReplyTo('info@francofit.com','FrancoFit');
+$mail->addReplyTo('info@franco-fit.com','FrancoFit');
 
 $mail->addAddress('sdesigncba@gmail.com','FrancoFit');
 
@@ -102,13 +102,6 @@ if (!$mail->send()) {
     $mail_enviado=true;
     $mail_error='Mensaje Enviado, Gracias';
 }
-// Ahora se envía el e-mail usando la función mail() de PHP
-//$headers = 'From: Ralseff <info@ralseff.com>' . "\r\n" .
-//    'Reply-To: noreply@ralseff.com' . "\r\n" .
-//    'Cc: ralseff@chimpancedigital.com.ar' . "\r\n" .
-//    'X-Mailer: PHP/' . phpversion();
-//$mail_enviado = @mail($email_to, utf8_decode($email_subject), utf8_decode($email_message), $headers);
-
 
 //if($mail_enviado)
 //{

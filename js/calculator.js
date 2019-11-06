@@ -25,6 +25,8 @@ $('document').ready(function(){
 	
 	$('#contactFormBtn').click(function(e){
 		e.preventDefault();
+		calculateValues();
+		
 		$.ajax({
 			url: './php/contact_me.php',
 			type: 'POST',
@@ -54,8 +56,6 @@ $('document').ready(function(){
 		$('html, body').animate({
 			scrollTop: $("#results").offset().top
 		}, 1000);
-		
-		calculateValues();
 		
 		$('#carbs').html(carbohydrates);
 		$('#prot').html(proteins);

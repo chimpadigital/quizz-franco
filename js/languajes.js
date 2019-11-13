@@ -37,7 +37,7 @@ var en = {"gainMuscle":"GAIN MUSCLE",
 		  "primeCombo":"PRIME COMBO",
 		  "select":"SELECT",
 		  "selected":"Languaje",
-		  "requiredField":"This field is required",
+		  "requiredField":"Field required",
 		  "allRightReserved":"All right reserved"};
 		  
 var es = {"gainMuscle":"GAIN MUSCLE",
@@ -77,7 +77,7 @@ var es = {"gainMuscle":"GAIN MUSCLE",
 		  "primeCombo":"PRIME COMBO",
 		  "select":"SELECCIONAR",
 		  "selected":"Idioma",
-		  "requiredField":"Este campo es requerido",
+		  "requiredField":"Campo obligatorio",
 		  "allRightReserved":"Todos los drechos reservados"};
 
 var de = {"gainMuscle":"MUSKELAUFBAU",
@@ -117,5 +117,5 @@ var de = {"gainMuscle":"MUSKELAUFBAU",
 		  "primeCombo":"PRIME COMBO",
 		  "select":"SELECT",
 		  "selected":"Languaje",
-		  "requiredField":"Dieses Feld wird benötigt",
+		  "requiredField":"Feld benötigt",
 		  "allRightReserved":"Alle rechte vorbehalten"};

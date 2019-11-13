@@ -2589,6 +2589,10 @@ button, select {
 .required{
 	color:red;
 	display:none;
+	position: absolute;
+    bottom: -13px;
+	left: 15px;
+	text-align: left;
 }
 
 option{background:#212529; padding: 15px;}

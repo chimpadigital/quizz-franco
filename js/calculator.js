@@ -172,6 +172,12 @@ function setLanguage(lan){
 	$('#trainingGuide2').html(lan.trainingGuide);
 	$('#primeCombo').html(lan.primeCombo);
 	$('#primeCombo2').html(lan.primeCombo);
+	
+	$('#required-0').html(lan.requiredField);
+	$('#required-1').html(lan.requiredField);
+	$('#required-2').html(lan.requiredField);
+	$('#required-3').html(lan.requiredField);
+	
 	$('#allRightReserved').html(lan.allRightReserved);
 	$('#select').html(lan.select);
 	$('#select2').html(lan.select);

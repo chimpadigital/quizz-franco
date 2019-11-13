@@ -269,12 +269,12 @@ function setValues(){
 		}
 		
 		if(progress == 'slow'){
-			carbohydrates = 30;
-			fats = 30;
+			carbohydrates = 35;
+			fats = 15;
 		}
 		
 		if(progress == 'fast'){
-			carbohydrates = 25;
+			carbohydrates = 45;
 			fats = 25;
 		}
 	}
@@ -289,13 +289,13 @@ function setValues(){
 		}
 		
 		if(progress == 'slow'){
-			carbohydrates = 35;
-			fats = 30;
+			carbohydrates = 45;
+			fats = 25;
 		}
 		
 		if(progress == 'fast'){
-			carbohydrates = 25;
-			fats = 30;
+			carbohydrates = 45;
+			fats = 25;
 		}
 	}
 	
@@ -309,13 +309,13 @@ function setValues(){
 		}
 		
 		if(progress == 'slow'){
-			carbohydrates = 45;
+			carbohydrates = 50;
 			fats = 25;
 		}
 		
 		if(progress == 'fast'){
-			carbohydrates = 60;
-			fats = 10;
+			carbohydrates = 55;
+			fats = 30;
 		}
 	}
 }

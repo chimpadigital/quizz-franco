@@ -9,6 +9,7 @@ var calories = '';
 var carbohydrates = 0;
 var proteins = 0;
 var fats = 0;
+var required = ['', '', '', ''];
 
 $('document').ready(function(){
 	language = navigator.language || navigator.userLanguage;
@@ -25,55 +26,97 @@ $('document').ready(function(){
 	
 	$('#contactFormBtn').click(function(e){
 		e.preventDefault();
-		calculateValues();
+		$('.required').hide();
 		
-		$.ajax({
-			url: './php/contact_me.php',
-			type: 'POST',
-			crossDomain: true,
-			dataType: 'text',
-			data:{
-				'name': $('#name').val(),
-				'lastName': $('#lastName').val(),
-				'email': $('#email').val(),
-				'weight': $('#weight').val(),
-				'height': $('#height').val(),
-				'target': target,
-				'gender': gender,
-				'progress': progress,
-				'carbohydrates': carbohydrates,
-				'proteins': proteins,
-				'fats': fats
-			},
-			success: function(res){
-				console.log('success');
-			},
-			error: function(er){
-				console.log('error');
-			}
-		});
-		
-		$('html, body').animate({
-			scrollTop: $("#results").offset().top
-		}, 1000);
-		
-		$('#carbs').html(carbohydrates);
-		$('#prot').html(proteins);
-		$('#fats').html(fats);
-		
-		$('.m-counter').each(function () {
-			$(this).prop('Counter',0).animate({
-			Counter: $(this).text()
-			}, {
-				duration: 4000,
-				easing: 'swing',
-				step: function (now) {
-				$(this).text(Math.ceil(now));
+		if(isValidForm()){
+			calculateValues();
+			$.ajax({
+				url: './php/contact_me.php',
+				type: 'POST',
+				crossDomain: true,
+				dataType: 'text',
+				data:{
+					'name': $('#name').val(),
+					'lastName': $('#lastName').val(),
+					'email': $('#email').val(),
+					'weight': $('#weight').val(),
+					'height': $('#height').val(),
+					'target': target,
+					'gender': gender,
+					'progress': progress,
+					'carbohydrates': carbohydrates,
+					'proteins': proteins,
+					'fats': fats
+				},
+				success: function(res){
+					console.log('success');
+				},
+				error: function(er){
+					console.log('error');
 				}
 			});
-		});
+			
+			$('html, body').animate({
+				scrollTop: $("#results").offset().top
+			}, 1000);
+			
+			$('#carbs').html(carbohydrates);
+			$('#prot').html(proteins);
+			$('#fats').html(fats);
+			
+			$('.m-counter').each(function () {
+				$(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+				}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function (now) {
+					$(this).text(Math.ceil(now));
+					}
+				});
+			});
+		}else{
+			for(var i = 0; i < required.length; i++){
+				if(required[i] == false){
+					var id = '#required-'+i;
+					$(id).show(250);
+				}					
+			}
+		}
 	});
 });
+
+function isValidForm(){
+	required = [true, true, true, true];
+	var response = true;
+	
+	if(empty($('#name').val())){
+		required[0] = false;
+		response = false;
+	}
+	if(empty($('#lastName').val())){
+		required[1] = false;
+		response = false;
+	}
+	
+	if(empty($('#email').val())){
+		required[2] = false;
+		response = false;
+	}
+	
+	if(empty($('#weight').val())){
+		required[3] = false;
+		response = false;
+	}
+	
+	return response;
+}
+
+function empty(data){
+	if(data == '' || data == null || data == 0 || data == '0')
+		return true;
+	return false;
+}
 
 function setLanguajeTo(lan){
 	if(lan == 'es')
@@ -206,7 +249,7 @@ function calculateValues(){
 	
 	carbohydrates = ((calories * carbohydrates) / 100) / 4;
 	fats = ((calories * fats) / 100) / 9;
-	proteins = ((calories * proteins) / 100) / 4;
+	proteins = $('#weight').val() * 2;
 }
 
 function setValues(){
@@ -222,13 +265,11 @@ function setValues(){
 		if(progress == 'slow'){
 			carbohydrates = 30;
 			fats = 30;
-			proteins = 40;
 		}
 		
 		if(progress == 'fast'){
 			carbohydrates = 25;
 			fats = 25;
-			proteins = 50;
 		}
 	}
 	
@@ -244,13 +285,11 @@ function setValues(){
 		if(progress == 'slow'){
 			carbohydrates = 35;
 			fats = 30;
-			proteins = 35;
 		}
 		
 		if(progress == 'fast'){
 			carbohydrates = 25;
 			fats = 30;
-			proteins = 35;
 		}
 	}
 	
@@ -266,13 +305,11 @@ function setValues(){
 		if(progress == 'slow'){
 			carbohydrates = 45;
 			fats = 25;
-			proteins = 30;
 		}
 		
 		if(progress == 'fast'){
 			carbohydrates = 60;
 			fats = 10;
-			proteins = 30;
 		}
 	}
 }

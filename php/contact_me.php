@@ -82,7 +82,9 @@ $mail->SMTPOptions = array(
     )
 );
 $mail->Username = 'info-franco-fit.com';
+
 $mail->Password = '159Fr1589';
+
 $mail->setFrom('info@franco-fit.com', 'FrancoFit');
 
 $mail->addReplyTo('info@franco-fit.com','FrancoFit');

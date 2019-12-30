@@ -89,7 +89,7 @@ $mail->setFrom('info@franco-fit.com', 'FrancoFit');
 
 $mail->addReplyTo('info@franco-fit.com','FrancoFit');
 
-$mail->addAddress('dgaudio.fit@gmail.com','FrancoFit');
+$mail->addAddress('sdesigncba@gmail.com','FrancoFit');
 
 $mail->isHTML(true);
 $mail->Subject = $email_subject;

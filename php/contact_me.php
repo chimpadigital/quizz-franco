@@ -21,7 +21,7 @@ $proteins = $_POST['proteins'];
 $fats = $_POST['fats'];
 
 
-$email_subject = "Francofit - QUIZZ";
+$email_subject = "Francofit - QUIZ";
 
 // Aquí se deberían validar los datos ingresados por el usuario
 if(!isset($_POST['name']) ||

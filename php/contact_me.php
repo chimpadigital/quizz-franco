@@ -83,13 +83,13 @@ $mail->SMTPOptions = array(
 );
 $mail->Username = 'info-franco-fit.com';
 
-$mail->Password = '159Fr1589';
+$mail->Password = 'Fit963.$%';
 
 $mail->setFrom('info@franco-fit.com', 'FrancoFit');
 
 $mail->addReplyTo('info@franco-fit.com','FrancoFit');
 
-$mail->addAddress('sdesigncba@gmail.com','FrancoFit');
+$mail->addAddress('info@franco-fit.com','FrancoFit');
 
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
